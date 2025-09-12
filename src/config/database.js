@@ -24,7 +24,7 @@ const testConnection = async () => {
     client.release();
   } catch (error) {
     console.error('Database connection failed:', error.message);
-    console.log('ℹDatabase configuration:', {
+    console.log('Database configuration:', {
       ...dbConfig,
       password: dbConfig.password ? '***' : 'Not set'
     });
