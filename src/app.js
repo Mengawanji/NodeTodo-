@@ -5,9 +5,11 @@ import rateLimit from 'express-rate-limit';
 import authRoutes from './routes/auth.js';
 import taskRoutes from './routes/tasks.js';
 import errorHandler from './middleware/errorHandler.js';
+import { createTablesAndIndexes } from './config/init-db.js';
 
 const app = express();
 
+createTablesAndIndexes ();
 
 app.use(helmet());
 app.use(cors());
