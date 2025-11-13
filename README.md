@@ -78,7 +78,7 @@ npm run dev
 ```
 
 The server will start at:
-**[http://localhost:5000](http://localhost:5000)**
+**[http://localhost:5000](http://localhost:3000)**
 
 ---
 
@@ -88,6 +88,7 @@ The app is deployed and accessible at:
 **[https://nodetodo-czvh.onrender.com/](https://nodetodo-czvh.onrender.com/)**
 
 ---
+
 
 ## API Endpoints
 
