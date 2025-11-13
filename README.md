@@ -1,59 +1,114 @@
-A Todo App/Task Management App
+# Todo App / Task Management API
 
-A simple yet powerful Task Management Application built with Node.js, Express, and PostgreSQL.
-This app allows users to create, update, delete, and track tasks with different priorities, statuses, and due dates.
+A simple yet powerful **Task Management Application** built with **Node.js**, **Express**, and **PostgreSQL**.
+This application allows users to efficiently manage their daily tasks — with features such as authentication, task prioritization, filtering, and progress tracking.
 
-Common App Features
+---
 
-// User authentication (JWT-based login & registration)
+## Features
 
-// Create, read, update, and delete tasks
+### Authentication
 
-// Set priority (low, medium, high) and status (pending, in-progress, completed)
+* **JWT-based** login and registration system
+* Protected routes for authenticated users
 
-// Search and filter tasks by status or priority
+### Task Management
 
-// Responsive frontend built with React + Tailwind CSS
+* Create, read, update, and delete (CRUD) tasks
+* Set task **priority** (Low, Medium, High)
+* Update task **status** (Pending, In-Progress, Completed)
+* Add **due dates** for better scheduling
 
-// RESTful API with PostgreSQL as the database
+### Search & Filter
 
-// Unit & integration tests with Jest & Supertest
+* Filter tasks by **status** or **priority**
+* Search tasks easily by title or description
 
-Tech Stack
+### Frontend
 
-Backend: Node.js, Express.js
+* Responsive **React** interface styled with **Tailwind CSS**
 
-CLONE REPOSITORY
+### Testing
+
+* Unit and integration tests using **Jest** and **Supertest**
+
+---
+
+## Tech Stack
+
+| Layer              | Technology                   |
+| ------------------ | ---------------------------- |
+| **Backend**        | Node.js, Express.js          |
+| **Database**       | PostgreSQL                   |
+| **Authentication** | JSON Web Token (JWT), bcrypt |
+| **Frontend**       | React, Tailwind CSS          |
+| **Testing**        | Jest, Supertest              |
+
+---
+
+## Installation & Setup
+
+### 1 Clone the repository
+
+```bash
 git clone git@github.com:Mengawanji/NodeTodo-.git
+cd NodeTodo-
+```
 
+### 2 Install dependencies
 
-The app will be running at:
+```bash
+npm install
+```
 
-URL https://nodetodo-czvh.onrender.com/
+### 3 Configure environment variables
 
+Create a `.env` file in the root directory and add:
 
-API Endpoints
-USER ROUTES
-========    ========    ===========
+```env
+PORT=5000
+DATABASE_URL=your_postgresql_connection_url
+JWT_SECRET=your_jwt_secret
+```
 
-POST /api/auth/register → Register new user
+### 4 Run the development server
 
-POST /api/auth/login => Login and receive token
+```bash
+npm run dev
+```
 
-GET /api/auth/me  => See your profile
+The server will start at:
+**[http://localhost:5000](http://localhost:5000)**
 
+---
 
+## Live Deployment
 
-TASK ROUTES
-========    ========    ===========
+The app is deployed and accessible at:
+**[https://nodetodo-czvh.onrender.com/](https://nodetodo-czvh.onrender.com/)**
 
-POST /api/tasks → Create new task
+---
 
-GET /api/tasks → Get all tasks 
+## API Endpoints
 
-GET /api/tasks/:id → Get single task
+### **User Routes**
 
-PUT /api/tasks/:id → Update task
+| Method | Endpoint             | Description               |
+| ------ | -------------------- | ------------------------- |
+| `POST` | `/api/auth/register` | Register a new user       |
+| `POST` | `/api/auth/login`    | Login and receive token   |
+| `GET`  | `/api/auth/me`       | View current user profile |
 
-DELETE /api/tasks/:id → Delete task
+---
 
+### **Task Routes**
+
+| Method   | Endpoint         | Description             |
+| -------- | ---------------- | ----------------------- |
+| `POST`   | `/api/tasks`     | Create a new task       |
+| `GET`    | `/api/tasks`     | Get all tasks           |
+| `GET`    | `/api/tasks/:id` | Get a single task by ID |
+| `PUT`    | `/api/tasks/:id` | Update a task           |
+| `DELETE` | `/api/tasks/:id` | Delete a task           |
+
+---
