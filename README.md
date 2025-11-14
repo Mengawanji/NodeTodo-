@@ -19,19 +19,6 @@ This application allows users to efficiently manage their daily tasks — with f
 * Update task **status** (Pending, In-Progress, Completed)
 * Add **due dates** for better scheduling
 
-### Search & Filter
-
-* Filter tasks by **status** or **priority**
-* Search tasks easily by title or description
-
-### Frontend
-
-* Responsive **React** interface styled with **Tailwind CSS**
-
-### Testing
-
-* Unit and integration tests using **Jest** and **Supertest**
-
 ---
 
 ## Tech Stack
@@ -76,9 +63,6 @@ JWT_SECRET=your_jwt_secret
 ```bash
 npm run dev
 ```
-
-The server will start at:
-**[http://localhost:5000](http://localhost:3000)**
 
 ---
 
