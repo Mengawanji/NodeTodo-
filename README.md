@@ -21,18 +21,6 @@ This application allows users to efficiently manage their daily tasks — with f
 
 ---
 
-## Tech Stack
-
-| Layer              | Technology                   |
-| ------------------ | ---------------------------- |
-| **Backend**        | Node.js, Express.js          |
-| **Database**       | PostgreSQL                   |
-| **Authentication** | JSON Web Token (JWT), bcrypt |
-| **Frontend**       | React, Tailwind CSS          |
-| **Testing**        | Jest, Supertest              |
-
----
-
 ## Installation & Setup
 
 ### 1 Clone the repository
