@@ -19,31 +19,6 @@ This application allows users to efficiently manage their daily tasks — with f
 * Update task **status** (Pending, In-Progress, Completed)
 * Add **due dates** for better scheduling
 
-### Search & Filter
-
-* Filter tasks by **status** or **priority**
-* Search tasks easily by title or description
-
-### Frontend
-
-* Responsive **React** interface styled with **Tailwind CSS**
-
-### Testing
-
-* Unit and integration tests using **Jest** and **Supertest**
-
----
-
-## Tech Stack
-
-| Layer              | Technology                   |
-| ------------------ | ---------------------------- |
-| **Backend**        | Node.js, Express.js          |
-| **Database**       | PostgreSQL                   |
-| **Authentication** | JSON Web Token (JWT), bcrypt |
-| **Frontend**       | React, Tailwind CSS          |
-| **Testing**        | Jest, Supertest              |
-
 ---
 
 ## Installation & Setup
@@ -77,9 +52,6 @@ JWT_SECRET=your_jwt_secret
 npm run dev
 ```
 
-The server will start at:
-**[http://localhost:5000](http://localhost:5000)**
-
 ---
 
 ## Live Deployment
@@ -88,6 +60,7 @@ The app is deployed and accessible at:
 **[https://nodetodo-czvh.onrender.com/](https://nodetodo-czvh.onrender.com/)**
 
 ---
+
 
 ## API Endpoints
 

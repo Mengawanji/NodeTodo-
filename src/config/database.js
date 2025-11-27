@@ -13,8 +13,6 @@ const  pool = new Pool({
   ssl: { rejectUnauthorized: false}
 })
 
-
-// Test connection
 const testConnection = async () => {
   try {
     const client = await pool.connect();
